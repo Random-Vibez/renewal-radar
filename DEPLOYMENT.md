@@ -26,8 +26,8 @@ Release evidence
 - Protected README, SECURITY, LICENSE, tests, and .htaccess probes: not served.
 - Renewal Radar path response CSP: effective `connect-src 'none'`, self-only scripts/styles/images, object/frame denial, and no-store.
 - Local and remote SHA-256 hashes matched for runtime files, preview, catalog, and RSS.
-- Remote rollback backup: timestamped backup on the approved production host, recorded in the private operator handoff
-- Plesk/Nginx path configuration backup: timestamped private operator backup on the approved production host
+- Remote rollback backup: timestamped backup on the approved production host, recorded in the private operator handoff.
+- Plesk/Nginx path configuration backup: timestamped private operator backup on the approved production host.
 
 Portfolio
 
@@ -38,7 +38,7 @@ Portfolio
 
 Rollback
 
-Restore the affected catalog/feed/app/preview files from the timestamped remote backup, restore the previous vhost_nginx.conf, then run the supported Plesk domain reconfiguration command and repeat live GET/header/browser verification.
+Restore the affected catalog/feed/app/preview files from the timestamped private operator backup, restore the previous path configuration, reconfigure the approved Plesk domain through the supported control-plane command, and repeat live GET/header/browser verification.
 
 Residual limitations
 
