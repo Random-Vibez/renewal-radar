@@ -23,5 +23,5 @@
   };
 
   banner.querySelector('.cookie-banner-accept').addEventListener('click', accept);
-  document.body.appendChild(banner);
+  document.body.insertBefore(banner, document.querySelector('main') || document.body.firstChild);
 })();
